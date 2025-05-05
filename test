@@ -1,0 +1,4 @@
+il faut d'abord installer php via sudo install php  dans le projet 
+
+et puis  lancer  php -S 127.0.0.0:8000  pour tester le projet 
+ 
